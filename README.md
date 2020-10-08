@@ -20,4 +20,8 @@ node server.js
 # ecommerce.meanstack.in.backend
 
 
-Refrences : (https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/) 
+Refrences : 
+(https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/) 
+(https://web.archive.org/web/20151009224806/http://docs.mongodb.org/manual/tutorial/create-an-auto-incrementing-field/) 
+(https://medium.com/swlh/crud-operations-on-mongodb-tree-data-structure-f5afaeca1550)   
+(https://blog.jscrambler.com/build-database-relationships-with-node-js-and-mongodb/)
