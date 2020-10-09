@@ -2,7 +2,7 @@ const db = require("../models");
 const Category = db.categories;
 
 exports.allCategory = (req, res) => {
-    Category.find()
+    Category.find().populate('subcategories','name').exec()
     .then(category => {
         res.send(category);
     }).catch(err => {
@@ -39,7 +39,7 @@ exports.addCategory = (req, res) => {
 };
 
 exports.getCategory = (req, res) => {
-    Category.findById(req.params.id).populate("subcategories")
+    Category.findById(req.params.id).populate('subcategories').exec()
     .then(category => {
         if(!category) {
             return res.status(404).send({

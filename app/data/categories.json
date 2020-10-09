@@ -1,0 +1,54 @@
+{
+    "status": 1,
+    "subcategories": [],
+    "_id": "5f80a4d41759ec21b4293169",
+    "name": "Electronics",
+    "createdAt": "2020-10-09T17:58:44.575Z",
+    "updatedAt": "2020-10-09T17:58:44.575Z",
+    "__v": 0
+},
+{
+    "status": 1,
+    "subcategories": [],
+    "_id": "5f80a4f91759ec21b429316a",
+    "name": "Men",
+    "createdAt": "2020-10-09T17:59:21.354Z",
+    "updatedAt": "2020-10-09T17:59:21.354Z",
+    "__v": 0
+},
+{
+    "status": 1,
+    "subcategories": [],
+    "_id": "5f80a4fe1759ec21b429316b",
+    "name": "Women",
+    "createdAt": "2020-10-09T17:59:26.415Z",
+    "updatedAt": "2020-10-09T17:59:26.415Z",
+    "__v": 0
+},
+{
+    "status": 1,
+    "subcategories": [],
+    "_id": "5f80a54c1759ec21b429316c",
+    "name": "TVs & Appliances",
+    "createdAt": "2020-10-09T18:00:44.167Z",
+    "updatedAt": "2020-10-09T18:00:44.167Z",
+    "__v": 0
+},
+{
+    "status": 1,
+    "subcategories": [],
+    "_id": "5f80a56f1759ec21b429316d",
+    "name": "Home & Furniture",
+    "createdAt": "2020-10-09T18:01:19.330Z",
+    "updatedAt": "2020-10-09T18:01:19.330Z",
+    "__v": 0
+},
+{
+    "status": 1,
+    "subcategories": [],
+    "_id": "5f80a5811759ec21b429316e",
+    "name": "Sports,Books & More",
+    "createdAt": "2020-10-09T18:01:37.049Z",
+    "updatedAt": "2020-10-09T18:01:37.049Z",
+    "__v": 0
+}

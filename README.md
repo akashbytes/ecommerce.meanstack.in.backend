@@ -28,6 +28,7 @@ Refrences :
 (https://dev.to/mkilmer/how-create-relationships-with-mongoose-and-node-js-with-real-example-43ei)
 (https://dev.to/mkilmer/facebook-auth-node-js-and-passport-js-3p55) 
 (https://dev.to/mkilmer/how-to-upload-image-using-multer-and-sharp-45lm)
-
+(https://medium.com/@nicknauert/mongooses-model-populate-b844ae6d1ee7)
+(https://mongoosejs.com/docs/populate.html)
 # Git Hubs 
  (https://github.com/mkilmerr/multer-sharp-upload-image) 

@@ -1,16 +1,16 @@
 const db = require("../models");
 const SubCategory = db.subcategories;
 
-// exports.allCategory = (req, res) => {
-//     Category.find()
-//     .then(category => {
-//         res.send(category);
-//     }).catch(err => {
-//         res.status(500).send({
-//             message: err.message || "Some error occurred while retrieving category."
-//         });
-//     });
-// };
+exports.allSubCategory = (req, res) => {
+    SubCategory.find().populate('categoryId','name').exec()
+    .then(subcategory => {
+        res.send(subcategory);
+    }).catch(err => {
+        res.status(500).send({
+            message: err.message || "Some error occurred while retrieving Sub-Category."
+        });
+    });
+};
 
 exports.addSubCategory = (req, res) => {
 

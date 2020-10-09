@@ -9,7 +9,7 @@ module.exports = function(app) {
     );
     next();
   });
-//   app.get("/api/subcategories/", [authJwt.verifyToken],controller.allCategory);
+  app.get("/api/subcategories/", [authJwt.verifyToken],controller.allSubCategory);
   app.post("/api/subcategories/add", [authJwt.verifyToken,authJwt.isAdmin], controller.addSubCategory);
   app.get("/api/subcategories/get/:id", [authJwt.verifyToken,authJwt.isAdmin],controller.getSubCategory);
 //   app.put("/api/subcategories/edit", [authJwt.verifyToken, authJwt.isAdmin],controller.editCategory);

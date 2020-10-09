@@ -12,6 +12,6 @@ module.exports = function(app) {
   app.get("/api/categories/", [authJwt.verifyToken],controller.allCategory);
   app.post("/api/categories/add", [authJwt.verifyToken,authJwt.isAdmin], controller.addCategory);
   app.get("/api/categories/get/:id", [authJwt.verifyToken,authJwt.isAdmin],controller.getCategory);
-  app.put("/api/categories/edit", [authJwt.verifyToken, authJwt.isAdmin],controller.editCategory);
+  app.put("/api/categories/edit/:id", [authJwt.verifyToken, authJwt.isAdmin],controller.editCategory);
   app.delete("/api/categories/delete/:id", [authJwt.verifyToken, authJwt.isAdmin],controller.deleteCategory);
 };

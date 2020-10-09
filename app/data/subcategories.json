@@ -1,0 +1,38 @@
+[
+    {
+        "status": 1,
+        "_id": "5f80b75d0982863264293ae4",
+        "name": "Mobile",
+        "categoryId": {
+            "_id": "5f80a4d41759ec21b4293169",
+            "name": "Electronics"
+        },
+        "createdAt": "2020-10-09T19:17:49.585Z",
+        "updatedAt": "2020-10-09T19:17:49.585Z",
+        "__v": 0
+    },
+    {
+        "status": 1,
+        "_id": "5f80b76e0982863264293ae5",
+        "name": "Mobile Accessories",
+        "categoryId": {
+            "_id": "5f80a4d41759ec21b4293169",
+            "name": "Electronics"
+        },
+        "createdAt": "2020-10-09T19:18:06.861Z",
+        "updatedAt": "2020-10-09T19:18:06.861Z",
+        "__v": 0
+    },
+    {
+        "status": 1,
+        "_id": "5f80b7840982863264293ae6",
+        "name": "Laptops",
+        "categoryId": {
+            "_id": "5f80a4d41759ec21b4293169",
+            "name": "Electronics"
+        },
+        "createdAt": "2020-10-09T19:18:28.164Z",
+        "updatedAt": "2020-10-09T19:18:28.164Z",
+        "__v": 0
+    }
+]
