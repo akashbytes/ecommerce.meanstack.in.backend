@@ -25,3 +25,9 @@ Refrences :
 (https://web.archive.org/web/20151009224806/http://docs.mongodb.org/manual/tutorial/create-an-auto-incrementing-field/) 
 (https://medium.com/swlh/crud-operations-on-mongodb-tree-data-structure-f5afaeca1550)   
 (https://blog.jscrambler.com/build-database-relationships-with-node-js-and-mongodb/)
+(https://dev.to/mkilmer/how-create-relationships-with-mongoose-and-node-js-with-real-example-43ei)
+(https://dev.to/mkilmer/facebook-auth-node-js-and-passport-js-3p55) 
+(https://dev.to/mkilmer/how-to-upload-image-using-multer-and-sharp-45lm)
+
+# Git Hubs 
+ (https://github.com/mkilmerr/multer-sharp-upload-image) 
