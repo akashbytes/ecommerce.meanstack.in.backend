@@ -2,7 +2,10 @@ const db = require("../models");
 const Category = db.categories;
 
 exports.allCategory = (req, res) => {
-    Category.find().populate('subcategories','name').exec()
+    Category
+    .find().
+    populate('subcategories','name-_id').
+    exec()
     .then(category => {
         res.send(category);
     }).catch(err => {
@@ -10,6 +13,7 @@ exports.allCategory = (req, res) => {
             message: err.message || "Some error occurred while retrieving category."
         });
     });
+
 };
 
 exports.addCategory = (req, res) => {

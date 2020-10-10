@@ -15,7 +15,7 @@ db.cart            = require("./cart.model");
 db.orers           = require("./orders.model");
 db.orderitems      = require("./orderitems.model");
 db.address         = require("./address.model");
-db.review          = require("./reviews.model");
+db.reviews          = require("./reviews.model");
 
 
 db.ROLES           = ["user", "admin", "moderator"];

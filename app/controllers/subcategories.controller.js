@@ -1,8 +1,9 @@
 const db = require("../models");
 const SubCategory = db.subcategories;
+const Category = db.categories;
 
 exports.allSubCategory = (req, res) => {
-    SubCategory.find().populate('categoryId','name').exec()
+    SubCategory.find().populate('categoryId','name-_id').exec()
     .then(subcategory => {
         res.send(subcategory);
     }).catch(err => {
@@ -20,6 +21,12 @@ exports.addSubCategory = (req, res) => {
             message: "Sub-Category name can not be empty"
         });
     }
+    if(!req.body.categoryId) {
+        return res.status(400).send({
+            message: "Category can not be empty"
+        });
+    }
+    
 
     // Create a Note
     const subcategory = new SubCategory({
@@ -30,7 +37,7 @@ exports.addSubCategory = (req, res) => {
     // Save Note in the database
     subcategory.save()
     .then(data => {
-        res.send(data);
+        res.send(data);            
     }).catch(err => {
         res.status(500).send({
             message: err.message || "Some error occurred while creating the Sub-Category."
