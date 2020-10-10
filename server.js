@@ -36,9 +36,11 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome to ecommerce application." });
 });
 
+var publicDir = require('path').join(__dirname,'/assets'); 
+app.use(express.static(publicDir)); 
 // routes
 require("./app/routes/auth.routes")(app);
 require("./app/routes/user.routes")(app);
