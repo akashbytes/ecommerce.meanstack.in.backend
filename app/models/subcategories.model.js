@@ -1,17 +1,19 @@
 const mongoose = require("mongoose");
 
-const Categories = mongoose.model(
+const SubCategories = mongoose.model(
   "SubCategories",
   new mongoose.Schema({
-    name:  String, // String is shorthand for {type: String}
-    status:  { type: Number, default: 1 },
-    categoryId : {
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'Categories'
-    }
-  },{
-    timestamps: true 
-   })
+        name:  String,  
+        status:  { type: Number, default: 1 },
+        categoryId : {
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'Categories'
+        },
+        childcategories : [{type: mongoose.Schema.Types.ObjectId,ref:'ChildCategories'}]
+    },
+    {
+      timestamps: true 
+    })
 );
 
-module.exports = Categories;
+module.exports = SubCategories;
