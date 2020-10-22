@@ -19,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const db = require("./app/models");
 const Role = db.role;
+// .connect(`mongodb://${dbConfig.USER}:${dbConfig.PASS}@${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
 
 db.mongoose
   .connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
@@ -47,8 +48,12 @@ require("./app/routes/user.routes")(app);
 require("./app/routes/categories.routes")(app);
 require("./app/routes/subcategories.routes")(app);
 
+
+//web routes
+require("./app/routes/web.routes")(app);
+
 // set port, listen for requests
-const PORT = process.env.PORT || 16958;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
